@@ -24,10 +24,15 @@ function addToDoItem() {
 
     input_name.val("");
     input_expense.val("");
-     let total_sum = 0;
+
+    let total_sum = 0;
+     total_sum_row = $(".total-sum-row");
+     
   $(".todoList .text2 li").each(function () {
     total_sum += parseInt($(this).text());
   });
+  total_sum_row.find(".total-sum").text(total_sum);
+
     items.find(".delete").click(function() {
         let deletedExpense = parseInt(items.find(".text2 li").text());
         total_sum -= deletedExpense;
