@@ -25,12 +25,29 @@ h1{
 li{
     list-style-type: none;
 }
-table{
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    border: 2px solid black;
-}
-th,td{
-    border: 2px solid black;
-}
+
+  }
+  
+  table, th, td {
+    border: 1px solid blue;
+  }
+  
+  th {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

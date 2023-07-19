@@ -27,7 +27,7 @@ function addToDoItem() {
 
     let total_sum = 0;
      total_sum_row = $(".total-sum-row");
-     
+
   $(".todoList .text2 li").each(function () {
     total_sum += parseInt($(this).text());
   });
@@ -37,6 +37,7 @@ function addToDoItem() {
         let deletedExpense = parseInt(items.find(".text2 li").text());
         total_sum -= deletedExpense;
         items.remove();
+        total_sum_row.find(".total-sum").text(total_sum);
     })   
     console.log(total_sum); 
 }
