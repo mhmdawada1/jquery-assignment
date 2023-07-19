@@ -1,0 +1,27 @@
+#input_name {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+#input_expense{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+body {
+    text-align: center;
+}
+h1{
+    margin-bottom: 50px;
+}
+#add_btn {
+    background-color: rgb(51, 147, 226);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+li{
+    list-style-type: none;
+}
